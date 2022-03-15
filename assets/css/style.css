@@ -21,11 +21,22 @@ body{
     font-weight: bold;
     text-align: center;
     justify-content:space-between;
+    
     }
     .navbar .title li {
         display: inline;
-        margin: 0.12em;
+        margin: 0.625em;
         padding: 0.5em;
+        border-radius: 3px;
+        background-color:#dfe6f4;
+    transition: 1s;
+        
+    }
+    .navbar .title li:hover {
+    
+        background-color:#727272;
+        
+        
         
     }
     .navbar .title .logop { /*logo pequeño barra de nav*/
@@ -34,20 +45,27 @@ body{
      margin-left: 0; 
     margin-top: 5px;
     border-radius: 7px;
-    background: #acacac;
+    /* background: #acacac; */
     box-shadow:  -11px -11px 22px #818181,
              11px 11px 22px #d7d7d7; 
     
     }
     .navbar a {
-        color: #727272;
-        background-color: #dfe6f4;
+        /* color: #727272 */
         padding: 0.625em;
-        border-radius: 2px;
         text-decoration: none;
-        
-      }
+        color: #727272;
+        transition: 1.5s;
+        }
+    .navbar a:hover {
+            /* color: #727272 */
+            padding: 0.625em;
+            text-decoration: none;
+            color:white
+           
+            }
 
+      
 .menu {
     background-image: url(../image/fondo.png);
     display: flex;
@@ -77,11 +95,19 @@ body{
 
 .menu .logo {/*logo grande pag principal*/
    
-    max-width: 25em;
-    max-height: 22.5em;
+    max-width: 15em;
+    max-height: 12.5em;
     margin-left:0px;
+   transition: all 2s;
+    }  
+    .menu .logo:hover {/*logo grande pag principal*/
    
-    }    
+        max-width: 25em;
+        max-height: 22.5em;
+        margin-left:0px;
+       
+    }  
+
 .menu .leyenda {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2em;
